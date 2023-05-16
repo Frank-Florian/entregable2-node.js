@@ -8,16 +8,16 @@ const Todos = db.define('todos', {
     autoIncrement: true
   },
   title:{
-    type: DataTypes.STRING(30),
-    allowNull:false
+    type: DataTypes.STRING(255),
+    allowNull:true
   },
   description:{
-    type: DataTypes.STRING(100),
-    allowNull: false
+    type: DataTypes.STRING(255),
+    allowNull: true
   },
   completed:{
     type: DataTypes.BOOLEAN,
-    allowNull: false
+    allowNull: true
   }
 });
 
